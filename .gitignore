@@ -1,0 +1,46 @@
+ ==========================
+# Backend
+# ==========================
+
+backend/venv/
+backend/__pycache__/
+backend/uploads/
+backend/.env
+backend/*.db
+backend/.pytest_cache/
+
+# ==========================
+# Frontend
+# ==========================
+
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# ==========================
+# Python
+# ==========================
+
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# ==========================
+# OS Files
+# ==========================
+
+.DS_Store
+Thumbs.db
+
+# ==========================
+# VS Code
+# ==========================
+
+.vscode/
+
+# ==========================
+# Misc
+# ==========================
+
+.env
