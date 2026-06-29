@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { NotebookPen } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 interface NotesCardProps {
   notes: string;
@@ -19,9 +21,23 @@ export function NotesCard({ notes }: NotesCardProps) {
 
       <CardContent>
         <div className="max-h-[500px] overflow-y-auto rounded-lg border border-purple-500/20 bg-slate-900/50 p-4">
-          <p className="whitespace-pre-wrap leading-7 text-slate-200">
-            {notes}
-          </p>
+          <article
+            className="
+              prose prose-invert prose-slate max-w-none
+              prose-headings:text-white
+              prose-p:text-slate-200
+              prose-strong:text-white
+              prose-li:text-slate-200
+              prose-code:text-blue-300
+              prose-pre:bg-slate-950
+              prose-blockquote:border-purple-500
+              prose-a:text-blue-400
+            "
+          >
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+              {notes}
+            </ReactMarkdown>
+          </article>
         </div>
       </CardContent>
     </Card>

@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 interface SummaryCardProps {
   summary: string;
@@ -18,9 +20,19 @@ export function SummaryCard({ summary }: SummaryCardProps) {
       </CardHeader>
 
       <CardContent>
-        <p className="whitespace-pre-wrap leading-7 text-slate-200">
-          {summary}
-        </p>
+        <article className="prose prose-invert prose-slate max-w-none
+          prose-headings:text-white
+          prose-p:text-slate-200
+          prose-strong:text-white
+          prose-li:text-slate-200
+          prose-code:text-blue-300
+          prose-pre:bg-slate-900
+          prose-blockquote:border-purple-500
+          prose-a:text-blue-400">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {summary}
+          </ReactMarkdown>
+        </article>
       </CardContent>
     </Card>
   );

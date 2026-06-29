@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { MessageSquare, Loader2 } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 interface ChatCardProps {
   question: string;
@@ -61,9 +63,23 @@ export function ChatCard({
               Answer
             </h3>
 
-            <p className="whitespace-pre-wrap leading-7 text-slate-200">
-              {answer}
-            </p>
+            <article
+              className="
+                prose prose-invert prose-slate max-w-none
+                prose-headings:text-white
+                prose-p:text-slate-200
+                prose-strong:text-white
+                prose-li:text-slate-200
+                prose-code:text-blue-300
+                prose-pre:bg-slate-950
+                prose-blockquote:border-purple-500
+                prose-a:text-blue-400
+              "
+            >
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {answer}
+              </ReactMarkdown>
+            </article>
           </div>
         )}
       </CardContent>
