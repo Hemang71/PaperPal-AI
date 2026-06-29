@@ -51,40 +51,6 @@ PaperPal AI combines a modern React frontend with a FastAPI backend to provide a
 
 ---
 
-# 🖼 Preview
-
-> Replace these images with screenshots of your application.
-
-## Home
-
-![Home](assets/home.png)
-
----
-
-## AI Summary
-
-![Summary](assets/summary.png)
-
----
-
-## Ask AI
-
-![Chat](assets/chat.png)
-
----
-
-## Quiz Generator
-
-![Quiz](assets/quiz.png)
-
----
-
-## Study Notes
-
-![Notes](assets/notes.png)
-
----
-
 # 🏗 Architecture
 
 ```text
