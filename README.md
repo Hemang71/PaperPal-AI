@@ -59,8 +59,6 @@ PaperPal AI combines a modern React frontend with a FastAPI backend to provide a
 
 # 🖼 Preview
 
-> Replace these images with screenshots of your application.
-
 ## Home
 
 ![Home](assets/home.png)
