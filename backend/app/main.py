@@ -27,7 +27,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins = [
         "http://localhost:5173",
-        "https://paper-pal-ai-psi.vercel.app/",
+        "https://paper-pal-ai-psi.vercel.app",
          ],
     allow_credentials = True,
     allow_methods = ["*"],
