@@ -2,12 +2,6 @@
 
 <div align="center">
 
-## 🌐 Live Demo
-
-**Live Application:** https://paper-pal-ai-psi.vercel.app
-
-**Backend API:** https://paperpal-ai-1.onrender.com
-
 ### 🚀 AI-Powered Research Paper Assistant
 
 **Upload a research paper and instantly generate AI summaries, study notes, quizzes, and context-aware answers from a single PDF.**
@@ -39,6 +33,12 @@ Simply upload a research paper in PDF format and instantly:
 * ❓ Generate multiple-choice quizzes
 
 PaperPal AI combines a modern React frontend with a FastAPI backend to provide a clean and intuitive research assistant.
+
+## 🌐 Live Demo
+
+**Live Application:** https://paper-pal-ai-psi.vercel.app
+
+**Backend API:** https://paperpal-ai-1.onrender.com
 
 ---
 
