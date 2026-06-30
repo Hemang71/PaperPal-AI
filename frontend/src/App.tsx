@@ -52,7 +52,7 @@ function App() {
     }
 
     const formData = new FormData();
-    formData.append("file", uploadFile);
+    formData.append("file", uploadFile!);
 
     try {
       setUploadingLoading(true);
